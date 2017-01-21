@@ -58,12 +58,12 @@ module.exports = React.createClass({
 
 module.exports = ReactRedux.connect(
   function mapStateToProps (state, ownProps) {
-    return Object.assing({}, ownProps, {
+    return Object.assign({}, ownProps, {
       routeKey: state.routing.key
     });
   },
   function mapDispatchToProps (dispatch, ownProps) {
-    return Object.assing({}, ownProps, {
+    return Object.assign({}, ownProps, {
       dispatch: dispatch
     });
   }
